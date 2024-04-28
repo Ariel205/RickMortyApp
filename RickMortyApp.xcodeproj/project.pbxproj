@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		B0B5DF2E2BDE133A000AD8A1 /* RickMortyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF2D2BDE133A000AD8A1 /* RickMortyAppApp.swift */; };
-		B0B5DF302BDE133A000AD8A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF2F2BDE133A000AD8A1 /* ContentView.swift */; };
+		B0B5DF302BDE133A000AD8A1 /* CharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF2F2BDE133A000AD8A1 /* CharactersListView.swift */; };
 		B0B5DF322BDE133C000AD8A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B5DF312BDE133C000AD8A1 /* Assets.xcassets */; };
 		B0B5DF352BDE133C000AD8A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B5DF342BDE133C000AD8A1 /* Preview Assets.xcassets */; };
 		B0B5DF3F2BDE133D000AD8A1 /* RickMortyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF3E2BDE133D000AD8A1 /* RickMortyAppTests.swift */; };
 		B0B5DF5C2BDE1BB0000AD8A1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF5B2BDE1BB0000AD8A1 /* Character.swift */; };
 		B0B5DF5F2BDE1D25000AD8A1 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF5E2BDE1D25000AD8A1 /* HttpClient.swift */; };
 		B0B5DF612BDE1D30000AD8A1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF602BDE1D30000AD8A1 /* Constants.swift */; };
+		B0B5DF662BDE3586000AD8A1 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF652BDE3586000AD8A1 /* CharacterService.swift */; };
+		B0B5DF682BDE3596000AD8A1 /* CharacterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF672BDE3596000AD8A1 /* CharacterClient.swift */; };
+		B0B5DF6A2BDE35A3000AD8A1 /* CharacterPreviewClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF692BDE35A3000AD8A1 /* CharacterPreviewClient.swift */; };
+		B0B5DF6C2BDE3625000AD8A1 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF6B2BDE3625000AD8A1 /* CharacterCell.swift */; };
+		B0B5DF6E2BDE366B000AD8A1 /* CharacterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF6D2BDE366B000AD8A1 /* CharacterCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +42,7 @@
 /* Begin PBXFileReference section */
 		B0B5DF2A2BDE133A000AD8A1 /* RickMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B5DF2D2BDE133A000AD8A1 /* RickMortyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyAppApp.swift; sourceTree = "<group>"; };
-		B0B5DF2F2BDE133A000AD8A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B0B5DF2F2BDE133A000AD8A1 /* CharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListView.swift; sourceTree = "<group>"; };
 		B0B5DF312BDE133C000AD8A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0B5DF342BDE133C000AD8A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B0B5DF3A2BDE133D000AD8A1 /* RickMortyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickMortyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +51,11 @@
 		B0B5DF5B2BDE1BB0000AD8A1 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		B0B5DF5E2BDE1D25000AD8A1 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		B0B5DF602BDE1D30000AD8A1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B0B5DF652BDE3586000AD8A1 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
+		B0B5DF672BDE3596000AD8A1 /* CharacterClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClient.swift; sourceTree = "<group>"; };
+		B0B5DF692BDE35A3000AD8A1 /* CharacterPreviewClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPreviewClient.swift; sourceTree = "<group>"; };
+		B0B5DF6B2BDE3625000AD8A1 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		B0B5DF6D2BDE366B000AD8A1 /* CharacterCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +109,6 @@
 				B0B5DF582BDE13A7000AD8A1 /* ViewModels */,
 				B0B5DF592BDE13B8000AD8A1 /* Models */,
 				B0B5DF5A2BDE1492000AD8A1 /* Services */,
-				B0B5DF2F2BDE133A000AD8A1 /* ContentView.swift */,
 				B0B5DF5D2BDE1CC7000AD8A1 /* Utilities */,
 				B0B5DF312BDE133C000AD8A1 /* Assets.xcassets */,
 				B0B5DF332BDE133C000AD8A1 /* Preview Content */,
@@ -127,6 +136,8 @@
 		B0B5DF572BDE134B000AD8A1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B0B5DF2F2BDE133A000AD8A1 /* CharactersListView.swift */,
+				B0B5DF6B2BDE3625000AD8A1 /* CharacterCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,6 +145,7 @@
 		B0B5DF582BDE13A7000AD8A1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B0B5DF6D2BDE366B000AD8A1 /* CharacterCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -149,6 +161,9 @@
 		B0B5DF5A2BDE1492000AD8A1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B0B5DF652BDE3586000AD8A1 /* CharacterService.swift */,
+				B0B5DF672BDE3596000AD8A1 /* CharacterClient.swift */,
+				B0B5DF692BDE35A3000AD8A1 /* CharacterPreviewClient.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -294,9 +309,14 @@
 			files = (
 				B0B5DF612BDE1D30000AD8A1 /* Constants.swift in Sources */,
 				B0B5DF5C2BDE1BB0000AD8A1 /* Character.swift in Sources */,
-				B0B5DF302BDE133A000AD8A1 /* ContentView.swift in Sources */,
+				B0B5DF302BDE133A000AD8A1 /* CharactersListView.swift in Sources */,
+				B0B5DF6C2BDE3625000AD8A1 /* CharacterCell.swift in Sources */,
+				B0B5DF662BDE3586000AD8A1 /* CharacterService.swift in Sources */,
 				B0B5DF5F2BDE1D25000AD8A1 /* HttpClient.swift in Sources */,
+				B0B5DF6A2BDE35A3000AD8A1 /* CharacterPreviewClient.swift in Sources */,
 				B0B5DF2E2BDE133A000AD8A1 /* RickMortyAppApp.swift in Sources */,
+				B0B5DF6E2BDE366B000AD8A1 /* CharacterCellViewModel.swift in Sources */,
+				B0B5DF682BDE3596000AD8A1 /* CharacterClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,11 +481,13 @@
 				DEVELOPMENT_TEAM = 7RDSPLH3W5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +495,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.study.RickMortyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -490,11 +516,13 @@
 				DEVELOPMENT_TEAM = 7RDSPLH3W5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -502,6 +530,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.study.RickMortyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
