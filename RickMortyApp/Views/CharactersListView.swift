@@ -7,18 +7,36 @@
 
 import SwiftUI
 
-struct CharactersListView: View {
+struct CharacterListView: View {
+
+    // MARK: Properties
+
+    @State var viewModel: CharacterListViewModel
+
+    // MARK: View
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+
+        NavigationStack {
+            List(viewModel.characterViewModels) { item in
+                ZStack(alignment: .leading) {
+                    //                    NavigationLink(destination: CharacterDetailView(character: item)) {
+                    EmptyView()
+                    //                    }
+                        .opacity(0)
+                    CharacterCell(item: item)
+                }
+                .listRowSeparator(.hidden)
+            }
+            .listStyle(.plain)
+            .navigationTitle("The Rick & Morty App")
+            .task {
+                await viewModel.start()
+            }
         }
-        .padding()
     }
 }
 
 #Preview {
-    CharactersListView()
+    CharacterListView(viewModel: CharacterListViewModel(characterService: CharacterPreviewClient()))
 }

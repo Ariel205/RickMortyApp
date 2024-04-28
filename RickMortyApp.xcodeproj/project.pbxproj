@@ -20,6 +20,7 @@
 		B0B5DF6A2BDE35A3000AD8A1 /* CharacterPreviewClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF692BDE35A3000AD8A1 /* CharacterPreviewClient.swift */; };
 		B0B5DF6C2BDE3625000AD8A1 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF6B2BDE3625000AD8A1 /* CharacterCell.swift */; };
 		B0B5DF6E2BDE366B000AD8A1 /* CharacterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF6D2BDE366B000AD8A1 /* CharacterCellViewModel.swift */; };
+		B0B5DF702BDE37D5000AD8A1 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF6F2BDE37D5000AD8A1 /* CharacterListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		B0B5DF692BDE35A3000AD8A1 /* CharacterPreviewClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPreviewClient.swift; sourceTree = "<group>"; };
 		B0B5DF6B2BDE3625000AD8A1 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		B0B5DF6D2BDE366B000AD8A1 /* CharacterCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellViewModel.swift; sourceTree = "<group>"; };
+		B0B5DF6F2BDE37D5000AD8A1 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				B0B5DF6D2BDE366B000AD8A1 /* CharacterCellViewModel.swift */,
+				B0B5DF6F2BDE37D5000AD8A1 /* CharacterListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				B0B5DF6A2BDE35A3000AD8A1 /* CharacterPreviewClient.swift in Sources */,
 				B0B5DF2E2BDE133A000AD8A1 /* RickMortyAppApp.swift in Sources */,
 				B0B5DF6E2BDE366B000AD8A1 /* CharacterCellViewModel.swift in Sources */,
+				B0B5DF702BDE37D5000AD8A1 /* CharacterListViewModel.swift in Sources */,
 				B0B5DF682BDE3596000AD8A1 /* CharacterClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

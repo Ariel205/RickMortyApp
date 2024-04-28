@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+protocol CharacterService {
+
+    // MARK: Methods
+    func getAll() async throws -> [Character]
+
+}
