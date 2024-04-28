@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B03F19B62BDE463B003DB8ED /* resources_list.json in Resources */ = {isa = PBXBuildFile; fileRef = B0B5DF7C2BDE423B000AD8A1 /* resources_list.json */; };
+		B03F19B72BDE4789003DB8ED /* resources_list.json in Resources */ = {isa = PBXBuildFile; fileRef = B0B5DF7C2BDE423B000AD8A1 /* resources_list.json */; };
 		B0B5DF2E2BDE133A000AD8A1 /* RickMortyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF2D2BDE133A000AD8A1 /* RickMortyAppApp.swift */; };
 		B0B5DF302BDE133A000AD8A1 /* CharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF2F2BDE133A000AD8A1 /* CharactersListView.swift */; };
 		B0B5DF322BDE133C000AD8A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B5DF312BDE133C000AD8A1 /* Assets.xcassets */; };
 		B0B5DF352BDE133C000AD8A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B5DF342BDE133C000AD8A1 /* Preview Assets.xcassets */; };
-		B0B5DF3F2BDE133D000AD8A1 /* RickMortyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF3E2BDE133D000AD8A1 /* RickMortyAppTests.swift */; };
+		B0B5DF3F2BDE133D000AD8A1 /* CharacterListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF3E2BDE133D000AD8A1 /* CharacterListViewModelTest.swift */; };
 		B0B5DF5C2BDE1BB0000AD8A1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF5B2BDE1BB0000AD8A1 /* Character.swift */; };
 		B0B5DF5F2BDE1D25000AD8A1 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF5E2BDE1D25000AD8A1 /* HttpClient.swift */; };
 		B0B5DF612BDE1D30000AD8A1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF602BDE1D30000AD8A1 /* Constants.swift */; };
@@ -25,6 +27,9 @@
 		B0B5DF762BDE3E51000AD8A1 /* ImageLoaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF752BDE3E51000AD8A1 /* ImageLoaderViewModel.swift */; };
 		B0B5DF782BDE3E9D000AD8A1 /* ImageLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF772BDE3E9D000AD8A1 /* ImageLoadingView.swift */; };
 		B0B5DF7A2BDE405C000AD8A1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B5DF792BDE405C000AD8A1 /* Launch Screen.storyboard */; };
+		B0B5DF7D2BDE423B000AD8A1 /* resources_list.json in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF7C2BDE423B000AD8A1 /* resources_list.json */; };
+		B0B5DF7F2BDE428C000AD8A1 /* MockCharacterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF7E2BDE428C000AD8A1 /* MockCharacterClient.swift */; };
+		B0B5DF822BDE42ED000AD8A1 /* Character+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF812BDE42ED000AD8A1 /* Character+Mock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +49,7 @@
 		B0B5DF312BDE133C000AD8A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0B5DF342BDE133C000AD8A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B0B5DF3A2BDE133D000AD8A1 /* RickMortyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickMortyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0B5DF3E2BDE133D000AD8A1 /* RickMortyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyAppTests.swift; sourceTree = "<group>"; };
+		B0B5DF3E2BDE133D000AD8A1 /* CharacterListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModelTest.swift; sourceTree = "<group>"; };
 		B0B5DF5B2BDE1BB0000AD8A1 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		B0B5DF5E2BDE1D25000AD8A1 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		B0B5DF602BDE1D30000AD8A1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -58,6 +63,9 @@
 		B0B5DF752BDE3E51000AD8A1 /* ImageLoaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderViewModel.swift; sourceTree = "<group>"; };
 		B0B5DF772BDE3E9D000AD8A1 /* ImageLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingView.swift; sourceTree = "<group>"; };
 		B0B5DF792BDE405C000AD8A1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		B0B5DF7C2BDE423B000AD8A1 /* resources_list.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = resources_list.json; sourceTree = "<group>"; };
+		B0B5DF7E2BDE428C000AD8A1 /* MockCharacterClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCharacterClient.swift; sourceTree = "<group>"; };
+		B0B5DF812BDE42ED000AD8A1 /* Character+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+Mock.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +130,9 @@
 		B0B5DF3D2BDE133D000AD8A1 /* RickMortyAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				B0B5DF3E2BDE133D000AD8A1 /* RickMortyAppTests.swift */,
+				B0B5DF832BDE43DF000AD8A1 /* Cases */,
+				B0B5DF7B2BDE4203000AD8A1 /* Mocks */,
+				B0B5DF802BDE42DB000AD8A1 /* Extensions */,
 			);
 			path = RickMortyAppTests;
 			sourceTree = "<group>";
@@ -174,6 +184,31 @@
 				B0B5DF5E2BDE1D25000AD8A1 /* HttpClient.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B0B5DF7B2BDE4203000AD8A1 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B0B5DF7C2BDE423B000AD8A1 /* resources_list.json */,
+				B0B5DF7E2BDE428C000AD8A1 /* MockCharacterClient.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B0B5DF802BDE42DB000AD8A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B0B5DF812BDE42ED000AD8A1 /* Character+Mock.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B0B5DF832BDE43DF000AD8A1 /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				B0B5DF3E2BDE133D000AD8A1 /* CharacterListViewModelTest.swift */,
+			);
+			path = Cases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03F19B72BDE4789003DB8ED /* resources_list.json in Resources */,
 				B0B5DF7A2BDE405C000AD8A1 /* Launch Screen.storyboard in Resources */,
 				B0B5DF352BDE133C000AD8A1 /* Preview Assets.xcassets in Resources */,
 				B0B5DF322BDE133C000AD8A1 /* Assets.xcassets in Resources */,
@@ -267,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03F19B62BDE463B003DB8ED /* resources_list.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +335,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0B5DF3F2BDE133D000AD8A1 /* RickMortyAppTests.swift in Sources */,
+				B0B5DF7D2BDE423B000AD8A1 /* resources_list.json in Sources */,
+				B0B5DF822BDE42ED000AD8A1 /* Character+Mock.swift in Sources */,
+				B0B5DF7F2BDE428C000AD8A1 /* MockCharacterClient.swift in Sources */,
+				B0B5DF3F2BDE133D000AD8A1 /* CharacterListViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,13 +553,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7RDSPLH3W5;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.study.RickMortyAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RickMortyApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RickMortyApp";
 			};
 			name = Debug;
@@ -533,13 +577,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7RDSPLH3W5;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.study.RickMortyAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RickMortyApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RickMortyApp";
 			};
 			name = Release;
