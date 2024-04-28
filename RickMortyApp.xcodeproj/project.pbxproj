@@ -22,6 +22,8 @@
 		B0B5DF6E2BDE366B000AD8A1 /* CharacterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF6D2BDE366B000AD8A1 /* CharacterCellViewModel.swift */; };
 		B0B5DF702BDE37D5000AD8A1 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF6F2BDE37D5000AD8A1 /* CharacterListViewModel.swift */; };
 		B0B5DF722BDE39E9000AD8A1 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF712BDE39E9000AD8A1 /* CharacterDetailView.swift */; };
+		B0B5DF762BDE3E51000AD8A1 /* ImageLoaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF752BDE3E51000AD8A1 /* ImageLoaderViewModel.swift */; };
+		B0B5DF782BDE3E9D000AD8A1 /* ImageLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF772BDE3E9D000AD8A1 /* ImageLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		B0B5DF6D2BDE366B000AD8A1 /* CharacterCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellViewModel.swift; sourceTree = "<group>"; };
 		B0B5DF6F2BDE37D5000AD8A1 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
 		B0B5DF712BDE39E9000AD8A1 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		B0B5DF752BDE3E51000AD8A1 /* ImageLoaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderViewModel.swift; sourceTree = "<group>"; };
+		B0B5DF772BDE3E9D000AD8A1 /* ImageLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 				B0B5DF2F2BDE133A000AD8A1 /* CharactersListView.swift */,
 				B0B5DF6B2BDE3625000AD8A1 /* CharacterCell.swift */,
 				B0B5DF712BDE39E9000AD8A1 /* CharacterDetailView.swift */,
+				B0B5DF772BDE3E9D000AD8A1 /* ImageLoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			children = (
 				B0B5DF6D2BDE366B000AD8A1 /* CharacterCellViewModel.swift */,
 				B0B5DF6F2BDE37D5000AD8A1 /* CharacterListViewModel.swift */,
+				B0B5DF752BDE3E51000AD8A1 /* ImageLoaderViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -269,8 +275,10 @@
 			files = (
 				B0B5DF612BDE1D30000AD8A1 /* Constants.swift in Sources */,
 				B0B5DF5C2BDE1BB0000AD8A1 /* Character.swift in Sources */,
+				B0B5DF762BDE3E51000AD8A1 /* ImageLoaderViewModel.swift in Sources */,
 				B0B5DF302BDE133A000AD8A1 /* CharactersListView.swift in Sources */,
 				B0B5DF722BDE39E9000AD8A1 /* CharacterDetailView.swift in Sources */,
+				B0B5DF782BDE3E9D000AD8A1 /* ImageLoadingView.swift in Sources */,
 				B0B5DF6C2BDE3625000AD8A1 /* CharacterCell.swift in Sources */,
 				B0B5DF662BDE3586000AD8A1 /* CharacterService.swift in Sources */,
 				B0B5DF5F2BDE1D25000AD8A1 /* HttpClient.swift in Sources */,

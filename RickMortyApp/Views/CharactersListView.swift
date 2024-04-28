@@ -39,6 +39,10 @@ struct CharacterListView: View {
             }
         }
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Filter by name")
+        .task {
+            URLCache.shared.memoryCapacity = 100_000_000 // ~100 MB memory space
+            URLCache.shared.diskCapacity = 1_000_000_000 // ~1GB disk cache space
+        }
     }
 }
 

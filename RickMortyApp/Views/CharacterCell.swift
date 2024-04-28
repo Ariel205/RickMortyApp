@@ -19,17 +19,9 @@ struct CharacterCell: View {
 
         VStack(alignment: .leading, spacing: 0) {
             HStack(alignment: .top) {
-
-                AsyncImage(url: item.imageURL) { image in
-                    image
-                        .resizable()
-                        .frame(minWidth: 0, maxWidth: .infinity)
-                        .frame(height: 170)
-                        .cornerRadius(10)
-                } placeholder: {
-                    ProgressView()
+                if let url = item.imageURL {
+                    ImageLoadingView(imageLoader: ImageLoaderViewModel(url: url))
                 }
-
             }
             .padding(.bottom, 10)
 
