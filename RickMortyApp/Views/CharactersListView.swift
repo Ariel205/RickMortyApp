@@ -20,10 +20,10 @@ struct CharacterListView: View {
         NavigationStack {
             List(viewModel.characterViewModels) { item in
                 ZStack(alignment: .leading) {
-                    //                    NavigationLink(destination: CharacterDetailView(character: item)) {
-                    EmptyView()
-                    //                    }
-                        .opacity(0)
+                    NavigationLink(destination: CharacterDetailView(character: item)) {
+                        EmptyView()
+                    }
+                    .opacity(0)
                     CharacterCell(item: item)
                 }
                 .listRowSeparator(.hidden)
