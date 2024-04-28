@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct RickMortyAppApp: App {
-    var body: some Scene {
+    var body: some Scene  {
         WindowGroup {
-            CharacterListView(viewModel: CharacterListViewModel(characterService: CharacterPreviewClient()))
+            CharacterListView(viewModel: CharacterListViewModel(characterService: CharacterClient()))
         }
     }
 }

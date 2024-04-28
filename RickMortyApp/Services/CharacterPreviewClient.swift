@@ -8,11 +8,11 @@
 import Foundation
 
 struct CharacterPreviewClient: CharacterService {
-
+    
     // MARK: Methods
-
+    
     func getAll() async throws -> [Character] {
         return Character.previews
     }
-
+    
 }
