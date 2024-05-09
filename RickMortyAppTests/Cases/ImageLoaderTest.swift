@@ -40,7 +40,26 @@ final class ImageLoaderTest: XCTestCase {
         //
         XCTAssertNil(sut.image)
     }
-    
+
+    @MainActor //Is mandatory main actor
+    func testImageFetchingLoadingState() async throws {
+
+        XCTAssertFalse(sut.isLoading)
+        //Given: Initialize sut with fileURL
+        let task = Task {  await sut.loadImage() }
+
+        /// Yield the above task to ensure it's constructed and finished.
+        await Task.yield()
+
+        //When
+
+        //Loading value must be true
+        XCTAssertTrue(sut.isLoading, "Loading state should update")
+
+        await task.value
+
+        XCTAssertNotNil(sut.image, "Image should be loaded")
+        //Then
+        XCTAssertFalse(sut.isLoading, "Loading state should reset")
+    }
 }
-
-
