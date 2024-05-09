@@ -9,6 +9,6 @@ import Foundation
 
 enum HttpError: Error {
     case badURL
-    case badResponse
+    case badResponse(statusCode: Int)
     case errorDecodingData
 }

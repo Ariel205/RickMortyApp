@@ -76,20 +76,19 @@ extension Character: Codable {
 
 }
 
- #if DEBUG
+#if DEBUG
 extension Character {
 
     static var preview: Character {
         previews[0]
     }
 
-        static var previews: [Character] {
-            [
-                .init(id: 1, name: "Rick Sanchez", status: "Alive", specie: "Human", type: "", gender: "Male", imageURL: "https://rickandmortyapi.com/api/character/avatar/1.jpeg", origin: "Earth (C-137)", location: "Citadel of Ricks"),
-                .init(id: 2, name: "Morty Smith", status: "Dead", specie: "Human", type: "", gender: "Male", imageURL: "https://rickandmortyapi.com/api/character/avatar/2.jpeg", origin: "Earth (C-137)", location: "Citadel of Ricks"),
-                .init(id: 3, name: "Ticktock", status: "unknown", specie: "Humanoid", type: "Clay-Person", gender: "Genderless", imageURL: "https://rickandmortyapi.com/api/character/avatar/664.jpeg", origin: "Earth (C-137)", location: "Citadel of Ricks")
-            ]
-        }
-
+    static var previews: [Character] {
+        [
+            .init(id: 1, name: "Rick Sanchez", status: "Alive", specie: "Human", type: "", gender: "Male", imageURL: "https://rickandmortyapi.com/api/character/avatar/1.jpeg", origin: "Earth (C-137)", location: "Citadel of Ricks"),
+            .init(id: 2, name: "Morty Smith", status: "Dead", specie: "Human", type: "", gender: "Male", imageURL: "https://rickandmortyapi.com/api/character/avatar/2.jpeg", origin: "Earth (C-137)", location: "Citadel of Ricks"),
+            .init(id: 3, name: "Ticktock", status: "unknown", specie: "Humanoid", type: "Clay-Person", gender: "Genderless", imageURL: "https://rickandmortyapi.com/api/character/avatar/664.jpeg", origin: "Earth (C-137)", location: "Citadel of Ricks")
+        ]
+    }
 }
- #endif
+#endif

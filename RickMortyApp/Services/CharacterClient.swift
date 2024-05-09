@@ -23,8 +23,8 @@ struct CharacterClient: CharacterService {
 
         let (data, response) = try await URLSession.shared.data(from: apiUrl)
 
-        guard (response as? HTTPURLResponse)?.statusCode == 200 else {
-            throw HttpError.badResponse
+        if let response = response as? HTTPURLResponse, response.statusCode != 200 {
+            throw HttpError.badResponse(statusCode: response.statusCode)
         }
 
         do {

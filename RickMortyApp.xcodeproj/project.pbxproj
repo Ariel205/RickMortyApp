@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B03F19B62BDE463B003DB8ED /* resources_list.json in Resources */ = {isa = PBXBuildFile; fileRef = B0B5DF7C2BDE423B000AD8A1 /* resources_list.json */; };
-		B03F19B72BDE4789003DB8ED /* resources_list.json in Resources */ = {isa = PBXBuildFile; fileRef = B0B5DF7C2BDE423B000AD8A1 /* resources_list.json */; };
+		B08FF7C62BE4F48B005337A2 /* ImageLoaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08FF7C52BE4F48B005337A2 /* ImageLoaderTest.swift */; };
 		B0B5DF2E2BDE133A000AD8A1 /* RickMortyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF2D2BDE133A000AD8A1 /* RickMortyAppApp.swift */; };
 		B0B5DF302BDE133A000AD8A1 /* CharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF2F2BDE133A000AD8A1 /* CharactersListView.swift */; };
 		B0B5DF322BDE133C000AD8A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B5DF312BDE133C000AD8A1 /* Assets.xcassets */; };
@@ -30,6 +30,10 @@
 		B0B5DF7D2BDE423B000AD8A1 /* resources_list.json in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF7C2BDE423B000AD8A1 /* resources_list.json */; };
 		B0B5DF7F2BDE428C000AD8A1 /* MockCharacterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF7E2BDE428C000AD8A1 /* MockCharacterClient.swift */; };
 		B0B5DF822BDE42ED000AD8A1 /* Character+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF812BDE42ED000AD8A1 /* Character+Mock.swift */; };
+		B0C8FCD02BEA6E1F00733F29 /* Character+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B5DF812BDE42ED000AD8A1 /* Character+Mock.swift */; };
+		B0C8FCD22BEA6E9A00733F29 /* resources_list.json in Resources */ = {isa = PBXBuildFile; fileRef = B0B5DF7C2BDE423B000AD8A1 /* resources_list.json */; };
+		B0C8FCD32BEA715B00733F29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B5DF312BDE133C000AD8A1 /* Assets.xcassets */; };
+		B0C8FCD82BEA782E00733F29 /* avatar52.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B0C8FCD72BEA782E00733F29 /* avatar52.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B08FF7C52BE4F48B005337A2 /* ImageLoaderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderTest.swift; sourceTree = "<group>"; };
 		B0B5DF2A2BDE133A000AD8A1 /* RickMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B5DF2D2BDE133A000AD8A1 /* RickMortyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyAppApp.swift; sourceTree = "<group>"; };
 		B0B5DF2F2BDE133A000AD8A1 /* CharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListView.swift; sourceTree = "<group>"; };
@@ -66,6 +71,7 @@
 		B0B5DF7C2BDE423B000AD8A1 /* resources_list.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = resources_list.json; sourceTree = "<group>"; };
 		B0B5DF7E2BDE428C000AD8A1 /* MockCharacterClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCharacterClient.swift; sourceTree = "<group>"; };
 		B0B5DF812BDE42ED000AD8A1 /* Character+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+Mock.swift"; sourceTree = "<group>"; };
+		B0C8FCD72BEA782E00733F29 /* avatar52.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar52.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,7 @@
 				B0B5DF832BDE43DF000AD8A1 /* Cases */,
 				B0B5DF7B2BDE4203000AD8A1 /* Mocks */,
 				B0B5DF802BDE42DB000AD8A1 /* Extensions */,
+				B0C8FCD62BEA782100733F29 /* Resources */,
 			);
 			path = RickMortyAppTests;
 			sourceTree = "<group>";
@@ -207,8 +214,17 @@
 			isa = PBXGroup;
 			children = (
 				B0B5DF3E2BDE133D000AD8A1 /* CharacterListViewModelTest.swift */,
+				B08FF7C52BE4F48B005337A2 /* ImageLoaderTest.swift */,
 			);
 			path = Cases;
+			sourceTree = "<group>";
+		};
+		B0C8FCD62BEA782100733F29 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B0C8FCD72BEA782E00733F29 /* avatar52.jpeg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B03F19B72BDE4789003DB8ED /* resources_list.json in Resources */,
+				B0C8FCD22BEA6E9A00733F29 /* resources_list.json in Resources */,
 				B0B5DF7A2BDE405C000AD8A1 /* Launch Screen.storyboard in Resources */,
 				B0B5DF352BDE133C000AD8A1 /* Preview Assets.xcassets in Resources */,
 				B0B5DF322BDE133C000AD8A1 /* Assets.xcassets in Resources */,
@@ -303,6 +319,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C8FCD82BEA782E00733F29 /* avatar52.jpeg in Resources */,
+				B0C8FCD32BEA715B00733F29 /* Assets.xcassets in Resources */,
 				B03F19B62BDE463B003DB8ED /* resources_list.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +344,7 @@
 				B0B5DF6A2BDE35A3000AD8A1 /* CharacterPreviewClient.swift in Sources */,
 				B0B5DF2E2BDE133A000AD8A1 /* RickMortyAppApp.swift in Sources */,
 				B0B5DF6E2BDE366B000AD8A1 /* CharacterCellViewModel.swift in Sources */,
+				B0C8FCD02BEA6E1F00733F29 /* Character+Mock.swift in Sources */,
 				B0B5DF702BDE37D5000AD8A1 /* CharacterListViewModel.swift in Sources */,
 				B0B5DF682BDE3596000AD8A1 /* CharacterClient.swift in Sources */,
 			);
@@ -339,6 +358,7 @@
 				B0B5DF822BDE42ED000AD8A1 /* Character+Mock.swift in Sources */,
 				B0B5DF7F2BDE428C000AD8A1 /* MockCharacterClient.swift in Sources */,
 				B0B5DF3F2BDE133D000AD8A1 /* CharacterListViewModelTest.swift in Sources */,
+				B08FF7C62BE4F48B005337A2 /* ImageLoaderTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

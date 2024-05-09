@@ -37,11 +37,13 @@ struct CharacterViewModel: Identifiable {
         self.character = character
     }
 
-    // MARK: Public API
+    // MARK: Identifiable
 
     var id: Int {
         character.id
     }
+
+    // MARK: Public API
 
     var name: String {
         character.name

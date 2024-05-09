@@ -23,6 +23,7 @@ import Foundation
     
     // MARK: Methods
     
+    @MainActor
     func start() async {
         do {
             // Fetch Characters

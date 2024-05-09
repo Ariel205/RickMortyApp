@@ -39,12 +39,12 @@ struct ImageLoadingView: View {
         }
         .onAppear {
             Task {
-                await imageLoader.fetch()
+                await imageLoader.loadImage()
             }
         }
     }
 }
 
 #Preview {
-    ImageLoadingView(imageLoader: ImageLoaderViewModel( url: URL(string: Character.preview.imageURL)))
+    ImageLoadingView(imageLoader: ImageLoaderViewModel( url: URL(string: Character.preview.imageURL)!))
 }

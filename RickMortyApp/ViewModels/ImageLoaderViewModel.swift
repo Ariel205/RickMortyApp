@@ -10,42 +10,57 @@ import UIKit
 
 @Observable final class ImageLoaderViewModel {
 
-    let url: URL?
+    enum Error: Swift.Error {
+        case imageCastingFailed
+    }
+
+    // MARK: Properties
+
+    let url: URL
 
     var image: UIImage?
     var errorMessage: String?
-    var isLoading: Bool = false
+    var isLoading = false
 
-    init(url: URL?) {
+    // MARK: - Initialization
+
+    init(url: URL) {
         self.url = url
     }
 
-    func fetch() async {
+    // MARK: Methods
 
-        guard image == nil && isLoading == false else {
-            return
-        }
-
-        guard let url = url else {
-            errorMessage = HttpError.badURL.localizedDescription
+    @MainActor
+    func loadImage() async  {
+        
+        if image != nil || isLoading  {
             return
         }
 
         isLoading = true
-        errorMessage = nil
+        defer { self.isLoading = false }
 
-        // Cache Policy
-        let request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad)
-
+        //Load Image
         do {
-            let (data, _) = try await URLSession.shared.data(for: request)
-            //print(data)
-            if let image = UIImage(data: data) {
-                self.image = image
-            }
+            self.image = try await fetch(for: url)
         } catch {
             errorMessage = error.localizedDescription
             print("Unable to Fetch Image \(error)")
         }
     }
+
+    private func fetch(for url: URL) async throws -> UIImage {
+
+        // Cache Policy
+        let request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad)
+        //
+        let (data, _) = try await URLSession.shared.data(for: request)
+        //print(data)
+        guard let image = UIImage(data: data) else {
+            throw Error.imageCastingFailed
+        }
+
+        return image
+    }
+
 }
