@@ -18,12 +18,11 @@ struct CharacterDetailView: View {
     var body: some View {
 
         VStack(alignment: .leading) {
-            AsyncImage(url: character.imageURL) { image in
-                image
-                    .resizable()
-                    .scaledToFit()
-            } placeholder: {
-                ProgressView()
+            HStack(alignment: .top) {
+                if let url =  character.imageURL {
+                    ImageLoadingView(imageLoader: ImageLoaderViewModel(url: url))
+                        .scaledToFit()
+                }
             }
             .overlay {
                 VStack(alignment: .leading, spacing: 5) {

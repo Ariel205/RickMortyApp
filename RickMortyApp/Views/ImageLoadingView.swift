@@ -26,9 +26,7 @@ struct ImageLoadingView: View {
             if let image = imageLoader.image {
                 Image(uiImage: image)
                     .resizable()
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .frame(height: 170)
-                    .cornerRadius(10)
+                    
             } else if let error = imageLoader.errorMessage {
                 Text(error)
                     .foregroundStyle(Color.red)
@@ -37,10 +35,8 @@ struct ImageLoadingView: View {
                 ProgressView()
             }
         }
-        .onAppear {
-            Task {
-                await imageLoader.loadImage()
-            }
+        .task {
+            await imageLoader.loadImage()
         }
     }
 }
