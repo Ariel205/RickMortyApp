@@ -27,7 +27,7 @@ import Foundation
     func start() async {
         do {
             // Fetch Characters
-            characterViewModels = try await characterService.getAll()
+            characterViewModels = try await characterService.characters()
                 .map(CharacterViewModel.init)
         } catch {
             print("Unable to Fetch Data \(error)")

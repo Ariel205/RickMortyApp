@@ -11,7 +11,7 @@ struct CharacterPreviewClient: CharacterService {
     
     // MARK: Methods
     
-    func getAll() async throws -> [Character] {
+    func characters() async throws -> [Character] {
         return Character.previews
     }
     

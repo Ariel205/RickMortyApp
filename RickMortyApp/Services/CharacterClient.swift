@@ -19,7 +19,7 @@ struct CharacterClient: CharacterService {
 
     // MARK: - Methods
 
-    func getAll() async throws -> [Character] {
+    func characters() async throws -> [Character] {
 
         let (data, response) = try await URLSession.shared.data(from: apiUrl)
 
